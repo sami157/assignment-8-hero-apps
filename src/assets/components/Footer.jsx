@@ -52,10 +52,6 @@ const Footer = () => {
                     </p>
                 </div>
             </div>
-
-            <div class="border-t border-gray-800 mt-12 pt-6 text-center text-gray-500 text-sm">
-                © 2025 YourApp. All rights reserved.
-            </div>
         </div>
     )
 }
