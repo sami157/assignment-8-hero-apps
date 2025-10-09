@@ -8,11 +8,11 @@ const Banner = () => {
       <div>At HERO.IO, we craft innovative apps designed to make everyday life simpler, smarter, and more exciting.Our goal is to turn your ideas into digital experiences that truly make an impact.</div>
     </div> 
     <div className='flex gap-[16px] my-[40px]'>
-        <button className='flex gap-[10px] px-[24px] py-[12px] border-gray-300 border-1 rounded-[8px]'>
+        <button className='flex gap-[10px] px-[24px] py-[12px] border-gray-300 border-1 items-center rounded-[8px]'>
             <img className='w-[32px]' src="src\assets\google-play.png" alt="" />
             <p className='font-bold'>Google Play</p>
         </button>
-        <button className='flex gap-[10px] px-[24px] py-[12px] border-gray-300 border-1 rounded-[8px]'>
+        <button className='flex gap-[10px] px-[24px] py-[12px] border-gray-300 border-1 items-center rounded-[8px]'>
             <img className='w-[32px]' src="src\assets\app-store.png" alt="" />
             <p className='font-bold'>App Store</p>
         </button>
@@ -27,14 +27,14 @@ const Banner = () => {
                 <p>21% more than last month</p>
             </div>
             <div className='px-[70px] py-[40px] flex flex-col gap-[16px]'>
-                <p>Total Downloads</p>
-                <p className='text-[64px] font-bold'>29.6M</p>
-                <p>21% more than last month</p>
+                <p>Total Reviews</p>
+                <p className='text-[64px] font-bold'>906k</p>
+                <p>46% more than last month</p>
             </div>
             <div className='px-[70px] py-[40px] flex flex-col gap-[16px]'>
-                <p>Total Downloads</p>
-                <p className='text-[64px] font-bold'>29.6M</p>
-                <p>21% more than last month</p>
+                <p>Active Apps</p>
+                <p className='text-[64px] font-bold'>132+</p>
+                <p>31 more will launch</p>
             </div>
         </div>
       </div>
