@@ -4,7 +4,8 @@ import { createBrowserRouter } from "react-router";
 import { RouterProvider } from "react-router/dom";
 import './index.css'
 import Root from './Root.jsx'
-import Banner from './assets/components/Banner.jsx';
+import Banner from './components/Banner.jsx';
+import Body from './components/Body.jsx';
 
 const router = createBrowserRouter([
   {
@@ -13,7 +14,7 @@ const router = createBrowserRouter([
     children: [
       {
         index: true,
-        Component: Banner 
+        Component: Body 
       }
     ]
   },
