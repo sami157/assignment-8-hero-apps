@@ -10,14 +10,24 @@ const AppDescription = () => {
                     <p className='text-[32px] font-bold'>App Name</p>
                     <p className='text-[#627382]'>Developed by <span className='font-bold bg-gradient-to-r from-[#632EE3] to-[#9F62F2] bg-clip-text text-transparent'>company</span></p>
                 </div>
-                <div className='mt-[30px] flex gap-[24px]'>
+                <div className='mt-[30px] flex gap-[60px]'>
                     <div>
                         <img className='w-[40px]' src="src/assets/download2.png" alt="" />
                         <p className='text-[#001931]'>Downloads</p>
                         <p className='text-[40px] font-extrabold'>8M</p>
                     </div>
+                    <div>
+                        <img className='w-[40px]' src="src/assets/star.png" alt="" />
+                        <p className='text-[#001931]'>Average Ratings</p>
+                        <p className='text-[40px] font-extrabold'>4.8</p>
+                    </div>
+                    <div>
+                        <img className='w-[40px]' src="src/assets/review.png" alt="" />
+                        <p className='text-[#001931]'>Total Reviews</p>
+                        <p className='text-[40px] font-extrabold'>54k</p>
+                    </div>
                 </div>
-                <button className='bg-[#00D390] rounded-[4px] text-white font-semibold px-[20px] py-[14px]'>
+                <button className='bg-[#00D390] rounded-[4px] text-white font-semibold px-[20px] py-[14px] mt-[30px]'>
                     <p>Install Now (291 MB)</p>
                 </button>
             </div>

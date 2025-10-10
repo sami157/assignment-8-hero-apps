@@ -8,8 +8,9 @@ const AppCard = ({ image, title, downloads, rating }) => {
 
   return (
     
-    <div className='flex flex-col gap-[16px] bg-white rounded-[16px] p-[16px] drop-shadow-2xl drop-shadow-gray-300'>
-        <img className='w-full rounded-[16px]' src={image} alt="" onError={(e) => { e.currentTarget.src = "src/assets/hero.png"; }}  />
+    <div className='flex h-[400px] flex-col gap-[16px] bg-white rounded-[16px] p-[16px] drop-shadow-2xl drop-shadow-gray-300 justify-between'>
+        <img className='w-full h-3/4 rounded-[16px] object-cover' src={image} alt="" onError={(e) => { e.currentTarget.src = "src/assets/hero.png"; }}  />
+        <div className='flex flex-col gap-[16px]'>
         <p className='text-[20px] font-medium'>{title}</p>
         <div className='flex justify-between'>
             <div className='flex px-[10px] py-[6px] gap-[8px] rounded-[4px] items-center bg-[#F1F5E8]'>
@@ -20,6 +21,7 @@ const AppCard = ({ image, title, downloads, rating }) => {
                 <img className='w-[16px] h-[16px]' src="src\assets\star.png" alt="" />
                 <p className='text-[#FF8811]'>{rating}</p>
             </div>
+        </div>
         </div>
     </div>
   )

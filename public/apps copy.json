@@ -1,6 +1,6 @@
 [
   {
-    "image": "https://upload.wikimedia.org/wikipedia/commons/1/19/Spotify_logo_without_text.svg",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/8/84/Spotify_icon.svg",
     "title": "Spotify",
     "companyName": "Spotify AB",
     "id": 1,
@@ -36,7 +36,7 @@
     ]
   },
   {
-    "image": "https://upload.wikimedia.org/wikipedia/commons/8/8a/Telegram_logo.svg",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/8/82/Telegram_logo.svg",
     "title": "Telegram",
     "companyName": "Telegram FZ-LLC",
     "id": 3,
@@ -54,7 +54,7 @@
     ]
   },
   {
-    "image": "https://upload.wikimedia.org/wikipedia/commons/4/42/YouTube_icon_%282013-2017%29.png",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/7/72/YouTube_social_white_square_%282017%29.svg",
     "title": "YouTube",
     "companyName": "Google LLC",
     "id": 4,
@@ -72,7 +72,7 @@
     ]
   },
   {
-    "image": "https://upload.wikimedia.org/wikipedia/commons/6/6e/TikTok_logo.svg",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/a/a6/Tiktok_icon.svg",
     "title": "TikTok",
     "companyName": "TikTok Pte. Ltd.",
     "id": 5,
@@ -108,7 +108,7 @@
     ]
   },
   {
-    "image": "https://upload.wikimedia.org/wikipedia/commons/c/c4/Facebook_f_logo_%282021%29.svg",
+    "image": "https://upload.wikimedia.org/wikipedia/en/0/04/Facebook_f_logo_%282021%29.svg",
     "title": "Facebook",
     "companyName": "Meta Platforms, Inc.",
     "id": 7,
@@ -126,7 +126,7 @@
     ]
   },
   {
-    "image": "https://upload.wikimedia.org/wikipedia/commons/5/51/Google_Maps_icon_%282020%29.svg",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/a/aa/Google_Maps_icon_%282020%29.svg",
     "title": "Google Maps",
     "companyName": "Google LLC",
     "id": 8,
