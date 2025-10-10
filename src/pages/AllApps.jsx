@@ -34,10 +34,12 @@ const AllApps = () => {
       setLoading(true);
       const timeout = setTimeout(() => {
         setLoading(false);
-      }, 500); 
+      }, 480); 
       return () => clearTimeout(timeout);
     }
   }, [searchTerm]);
+
+
 
     return (
         <div className='mx-[80px]'>
@@ -62,19 +64,21 @@ const AllApps = () => {
           <Spinner />
         </div>
       ) : searchTerm ? (
-        // when searching use CardGrid2
+       //gjhhfyiuhu
         <CardGrid2 apps={filteredApps} />
       ) : (
-        // when not searching use CardGrid (fetches itself)
+        // fgfgfggyufigigi
         <CardGrid jsonfile="apps.json" />
       )}
 
              <div className="flex justify-center items-center mt-6">
                     <button onClick={() => setSearchTerm("")} className='flex px-[16px] py-[12px] gap-[10px] bg-gradient-to-r from-[#632EE3] to-[#9F62F2] rounded-sm items-center justify-center'>
                        
-                        <p className='text-white font-semibold'>Show All</ p>
-                    </button>
-                </div>
+
+                       
+                        <p className='text-white font-semibold'>Show All</ p> </button></div>
+                   
+                
         </div>
 
        

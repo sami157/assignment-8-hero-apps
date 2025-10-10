@@ -1,19 +1,25 @@
 import React from "react";
+
+
+
 import {
   BarChart,
-  Bar,
-  XAxis,
-  YAxis,
   Tooltip,
+  Bar,
+   YAxis,
+  XAxis,
+ 
+  
   CartesianGrid,
   ResponsiveContainer,
 } from "recharts";
 
 const RatingsChart = ({ ratings }) => {
-  // ratings is the array from your apps.json (name + count)
-  const chartData = ratings.map(r => ({
-    name: r.name,   // e.g. "5 star"
-    count: r.count, // e.g. 9800000
+  
+  const chartData = ratings.map(rtings => ({
+    name: rtings.name,   
+
+    count: rtings.count, 
   }));
 
   return (
@@ -21,8 +27,9 @@ const RatingsChart = ({ ratings }) => {
       <ResponsiveContainer width="100%" height="100%">
         <BarChart
           data={chartData}
+
           layout="vertical"
-          margin={{ top: 20, right: 30, left: 40, bottom: 20 }}
+          margin={{ top: 22, right: 31, left: 41, bottom: 20 }}
         >
           <CartesianGrid strokeDasharray="3 3" />
           <XAxis type="number" />

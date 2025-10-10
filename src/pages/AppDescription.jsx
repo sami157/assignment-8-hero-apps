@@ -5,6 +5,8 @@ import { useParams } from "react-router-dom";
 import { toast, ToastContainer } from "react-toastify";
 
 import RatingsChart from "../components/RatingsChart";
+
+import AppNotFound from "../pages/Appnotf"; 
 import "react-toastify/dist/ReactToastify.css";
 
 import Spinner from "../components/Spinner";
@@ -28,8 +30,10 @@ const keepStorage = (app) => {
 
 const theInstallButton = (app, setInstalled) => {
   keepStorage(app);
-  toast.success(`${app.title} installed successfully `);
+ 
   setInstalled(true);
+
+   toast.success(`${app.title} installed successfully `);
 };
 
 
@@ -43,7 +47,7 @@ const theInstallButton = (app, setInstalled) => {
   if (found) {
     const stored = JSON.parse(localStorage.getItem("installedApps")) || [];
     const alreadyInstalled = stored.some((a) => a.id === found.id);
-    setInstalled(alreadyInstalled);   // <-- ADD THIS
+    setInstalled(alreadyInstalled);   
   }
 
   setLoading(false);
@@ -60,12 +64,8 @@ const theInstallButton = (app, setInstalled) => {
   }
 
   if (!app) {
-    return (
-      <div className="text-center mt-10 text-red-500 font-semibold">
-        {/* App not found! */}
-      </div>
-    );
-  }
+  return <AppNotFound />;
+}
 
   return (
     <div className='p-[80px] flex flex-col gap-[80px]'>
@@ -110,7 +110,12 @@ const theInstallButton = (app, setInstalled) => {
 </div>
         <div>
             <p className='text-[24px] font-semibold mb-[24px]'>Description</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis at accusamus facilis eos quam porro, eum accusantium vitae molestiae blanditiis provident inventore aut! Voluptatum voluptatem blanditiis ab provident fugit odio.</p>
+           <p>
+
+
+
+            {app.description}
+           </p>
         </div>
 
          <ToastContainer position="top-right" autoClose={2000} />

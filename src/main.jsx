@@ -5,6 +5,8 @@ import { RouterProvider } from "react-router/dom";
 import './index.css'
 import Root from './Root.jsx'
 import Body from './components/Body.jsx';
+
+import Error404 from "./pages/Error404.jsx";
 import AllApps from './pages/AllApps.jsx';
 
 import InstalledApps from './components/InstalledApps.jsx';
@@ -30,7 +32,8 @@ const router = createBrowserRouter([
       { 
         path: "about/:id",
         Component: AppDescription 
-      }
+      },
+      { path: "*", Component: Error404 }
     ]
   },
 ]);

@@ -1,5 +1,12 @@
 import React from 'react';
 
+
+
+import stree from "../assets/star.png";
+
+
+import dnd from "../assets/download.png";
+
 const InstalledAppCard = ({ image, title, downloads, rating, onUninstall }) => {
   return (
     <div className='w-full p-[16px] bg-white rounded-[8px] flex items-center justify-between'>
@@ -9,14 +16,21 @@ const InstalledAppCard = ({ image, title, downloads, rating, onUninstall }) => {
           <p className='text-[20px] font-medium'>{title}</p>
           <div className='flex gap-[16px]'>
             <div className='flex gap-[4px] items-center'>
-              <img className='w-[12px]' src="src/assets/download.png" alt="downloads" />
+
+
+              <img className='w-[12px]' src={dnd} alt="" />
+
               <p className='text-[#00D390]'>
                 {downloads ? `${(downloads / 1_000_000).toFixed(0)}M+` : "N/A"}
+
+
               </p>
             </div>
             <div className='flex gap-[4px] items-center'>
-              <img className='w-[12px]' src="src/assets/star.png" alt="rating" />
-              <p className='text-[#FF8811]'>{rating || "N/A"}</p>
+
+              
+              <img className='w-[12px]' src={stree} alt="" />
+              <p className='text-[#FF8811]'>{rating}</p>
             </div>
           </div>
         </div>

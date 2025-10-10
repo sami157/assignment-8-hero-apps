@@ -25,11 +25,12 @@ const RatingsChart = ({ ratings }) => {
           layout="vertical"
           margin={{ top: 20, right: 30, left: 40, bottom: 20 }}
         >
+
           <CartesianGrid strokeDasharray="3 3" />
           <XAxis type="number" />
           <YAxis dataKey="name" type="category" />
           <Tooltip />
-          <Bar dataKey="count" fill="#FF8811" barSize={30} />
+          <Bar dataKey="count" fill="#FF8811" barSize={32} />
         </BarChart>
       </ResponsiveContainer>
     </div>
