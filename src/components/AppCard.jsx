@@ -1,6 +1,9 @@
 
 import React from 'react';
 
+import stree from "../assets/star.png";
+import dnd from "../assets/download.png";
+
 const AppCard = ({ image, title, downloads, rating }) => {
 
   
@@ -14,11 +17,11 @@ const AppCard = ({ image, title, downloads, rating }) => {
         <p className='text-[20px] font-medium'>{title}</p>
         <div className='flex justify-between'>
             <div className='flex px-[10px] py-[6px] gap-[8px] rounded-[4px] items-center bg-[#F1F5E8]'>
-                <img className='w-[12px]' src="src\assets\download.png" alt="" />
+                <img className='w-[12px]' src={dnd} alt="" />
                 <p className='text-[#00D390]'>{(downloads / 1_000_000).toFixed(0)}M+</p>
             </div>
             <div className='flex px-[10px] py-[6px] gap-[8px] rounded-[4px] items-center bg-[#FFF0E1]'>
-                <img className='w-[16px] h-[16px]' src="src\assets\star.png" alt="" />
+                <img className='w-[16px] h-[16px]' src={stree} alt="" />
                 <p className='text-[#FF8811]'>{rating}</p>
             </div>
         </div>

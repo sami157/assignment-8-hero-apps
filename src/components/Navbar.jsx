@@ -1,5 +1,7 @@
 import React from 'react'
 import { Link, NavLink } from 'react-router-dom'
+
+import guthib from "../assets/github.png";
 const Navbar = () => {
 
 
@@ -39,7 +41,7 @@ const Navbar = () => {
 
                 <div>
                     <button onClick={navigateToGithub} className='flex px-[16px] py-[12px] gap-[10px] bg-gradient-to-r from-[#632EE3] to-[#9F62F2] rounded-sm items-center'>
-                        <img className='h-[20px]' src="src\assets\github.png" alt="" />
+                        <img className='h-[20px]' src={guthib} alt="" />
                         <p className='text-white font-semibold'>Contribute</ p>
                     </button>
                 </div>
