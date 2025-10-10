@@ -5,6 +5,7 @@ import Footer from '../components/Footer'
 
 
 import Title from '../components/Title'
+import NotFoundss from "../assets/App-Error.png"
 import Spinner from "../components/Spinner";
 
 import CardGrid2 from "../components/CardGrid2";
@@ -59,17 +60,21 @@ const AllApps = () => {
         
 
       </div>
-           {loading ? (
-        <div className="flex justify-center items-center h-40">
-          <Spinner />
-        </div>
-      ) : searchTerm ? (
-       //gjhhfyiuhu
-        <CardGrid2 apps={filteredApps} />
-      ) : (
-        // fgfgfggyufigigi
-        <CardGrid jsonfile="apps.json" />
-      )}
+         {loading ? (
+  <div className="flex justify-center items-center h-40">
+    <Spinner />
+  </div>
+) : searchTerm ? (
+  filteredApps.length > 0 ? (
+    <CardGrid2 apps={filteredApps} />
+  ) : (
+    <div className="flex justify-center items-center h-[60vh]">
+      <img src={NotFoundss} alt="" className="w-80" />
+    </div>
+  )
+) : (
+  <CardGrid jsonfile="apps.json" />
+)}
 
              <div className="flex justify-center items-center mt-6">
                     <button onClick={() => setSearchTerm("")} className='flex px-[16px] py-[12px] gap-[10px] bg-gradient-to-r from-[#632EE3] to-[#9F62F2] rounded-sm items-center justify-center'>
