@@ -1,6 +1,12 @@
 import React from 'react'
-
+import { Link, NavLink } from 'react-router-dom'
 const Banner = () => {
+   const navigateToGoogleplaystore = () => {
+  window.open("https://play.google.com/store/games?hl=en&pli=1", "_blank");
+};
+ const navigateToappstore = () => {
+  window.open("https://www.apple.com/app-store/", "_blank");
+};
   return (
     <div className='flex flex-col mx-auto pt-[80px] text-center items-center'>  
     <div className='w-3/5 mx-auto'>
@@ -8,11 +14,11 @@ const Banner = () => {
       <div>At HERO.IO, we craft innovative apps designed to make everyday life simpler, smarter, and more exciting.Our goal is to turn your ideas into digital experiences that truly make an impact.</div>
     </div> 
     <div className='flex gap-[16px] my-[40px]'>
-        <button className='flex gap-[10px] px-[24px] py-[12px] border-gray-300 border-1 items-center rounded-[8px]'>
+        <button onClick={navigateToGoogleplaystore} className='flex gap-[10px] px-[24px] py-[12px] border-gray-300 border-1 items-center rounded-[8px]'>
             <img className='w-[32px]' src="src\assets\google-play.png" alt="" />
             <p className='font-bold'>Google Play</p>
         </button>
-        <button className='flex gap-[10px] px-[24px] py-[12px] border-gray-300 border-1 items-center rounded-[8px]'>
+        <button onClick={navigateToappstore} className='flex gap-[10px] px-[24px] py-[12px] border-gray-300 border-1 items-center rounded-[8px]'>
             <img className='w-[32px]' src="src\assets\app-store.png" alt="" />
             <p className='font-bold'>App Store</p>
         </button>

@@ -1,18 +1,24 @@
-import React from 'react'
 
-const AppCard = () => {
+import React from 'react';
+
+const AppCard = ({ image, title, downloads, rating }) => {
+
+  
+  
+
   return (
+    
     <div className='flex flex-col gap-[16px] bg-white rounded-[16px] p-[16px] drop-shadow-2xl drop-shadow-gray-300'>
-        <img className='w-full rounded-[16px]' src="src\assets\App-Error.png" alt="" />
-        <p className='text-[20px] font-medium'>App Name</p>
+        <img className='w-full rounded-[16px]' src={image} alt="" onError={(e) => { e.currentTarget.src = "src/assets/hero.png"; }}  />
+        <p className='text-[20px] font-medium'>{title}</p>
         <div className='flex justify-between'>
             <div className='flex px-[10px] py-[6px] gap-[8px] rounded-[4px] items-center bg-[#F1F5E8]'>
                 <img className='w-[12px]' src="src\assets\download.png" alt="" />
-                <p className='text-[#00D390]'>9M</p>
+                <p className='text-[#00D390]'>{(downloads / 1_000_000).toFixed(0)}M+</p>
             </div>
             <div className='flex px-[10px] py-[6px] gap-[8px] rounded-[4px] items-center bg-[#FFF0E1]'>
                 <img className='w-[16px] h-[16px]' src="src\assets\star.png" alt="" />
-                <p className='text-[#FF8811]'>5</p>
+                <p className='text-[#FF8811]'>{rating}</p>
             </div>
         </div>
     </div>
