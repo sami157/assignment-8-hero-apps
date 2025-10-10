@@ -11,6 +11,8 @@ import "react-toastify/dist/ReactToastify.css";
 
 import Spinner from "../components/Spinner";
 
+import NotFoundss from "../assets/App-Error.png"
+
 const AppDescription = () => {
 
     const [installed, setInstalled] = useState(false);
@@ -63,8 +65,12 @@ const theInstallButton = (app, setInstalled) => {
     );
   }
 
-  if (!app) {
-  return <AppNotFound />;
+ if (!app) {
+  return (
+    <div className="flex justify-center items-center h-[80vh]">
+      <img src={NotFoundss} alt="" className="w-80" />
+    </div>
+  );
 }
 
   return (
