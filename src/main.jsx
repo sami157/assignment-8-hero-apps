@@ -6,7 +6,7 @@ import './index.css'
 import Root from './Root.jsx'
 import Body from './components/Body.jsx';
 import AllApps from './pages/AllApps.jsx';
-import About from "./pages/About.jsx";
+
 import InstalledApps from './components/InstalledApps.jsx';
 import AppDescription from './pages/AppDescription.jsx';
 

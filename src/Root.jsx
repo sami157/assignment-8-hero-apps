@@ -5,7 +5,7 @@ import Footer from './components/Footer'
 import { useNavigation } from "react-router-dom";
 import { Outlet } from 'react-router'
 import Spinner from './components/Spinner';
-import About from "./pages/About.jsx";
+
 
 function Root() {
   const navigation = useNavigation();
