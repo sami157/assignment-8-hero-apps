@@ -2,6 +2,7 @@ import React from 'react'
 import { Link, NavLink } from 'react-router-dom'
 
 import guthib from "../assets/github.png";
+import logo from "../assets/logo.png"
 const Navbar = () => {
 
 
@@ -14,7 +15,7 @@ const Navbar = () => {
             <div className='bg-white px-[80px] py-[16px] flex justify-between items-center shadow-sm'>
                 <Link to="/" className='flex gap-[4px] items-center'>
                   
-                    <img className='h-[40px]' src="src\assets\logo.png" alt="" />
+                    <img className='h-[40px]' src={logo} alt="" />
                     <p className='text-[16px] font-bold bg-gradient-to-r from-[#632EE3] to-[#9F62F2] bg-clip-text text-transparent'>HERO.IO</p>
                   
                 </Link>

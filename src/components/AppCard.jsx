@@ -12,7 +12,7 @@ const AppCard = ({ image, title, downloads, rating }) => {
   return (
     
     <div className='flex h-[400px] flex-col gap-[16px] bg-white rounded-[16px] p-[16px] drop-shadow-2xl drop-shadow-gray-300 justify-between'>
-        <img className='w-full h-3/4 rounded-[16px] object-cover' src={image} alt="" onError={(e) => { e.currentTarget.src = "src/assets/hero.png"; }}  />
+        <img className='w-full h-7/10 rounded-[16px] object-cover' src={image} alt="" onError={(e) => { e.currentTarget.src = "src/assets/hero.png"; }}  />
         <div className='flex flex-col gap-[16px]'>
         <p className='text-[20px] font-medium'>{title}</p>
         <div className='flex justify-between'>
