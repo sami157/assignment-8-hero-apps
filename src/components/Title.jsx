@@ -1,10 +1,10 @@
 import React from 'react'
 
-const Title = () => {
+const Title = ({ text1, text2 }) => {
   return (
-    <div className='text-center mt-[80px] mb-[40px]'>
-      <p className='text-[48px] font-bold'>Trending Apps</p>
-      <p className='text-[#627382]'>Explore All Trending Apps on the Market developed by us</p>
+    <div className="text-center mt-[80px] mb-[40px]">
+      <p className="text-[48px] font-bold">{text1}</p>
+      <p className="text-[#627382]">{text2}</p>
     </div>
   )
 }

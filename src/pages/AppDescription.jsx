@@ -62,7 +62,7 @@ const theInstallButton = (app, setInstalled) => {
   if (!app) {
     return (
       <div className="text-center mt-10 text-red-500 font-semibold">
-        App not found!
+        {/* App not found! */}
       </div>
     );
   }

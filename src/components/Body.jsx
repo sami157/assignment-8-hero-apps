@@ -14,7 +14,7 @@ const Body = () => {
   return (
     <div>
       <Banner></Banner>
-      <Title></Title>
+      <Title text1='Trending Apps' text2='Explore All Trending Apps on the Market developed by us'></Title>
       <div className='px-[80px]'>
        <CardGrid jsonfile="apps copy.json"></CardGrid>
       </div>

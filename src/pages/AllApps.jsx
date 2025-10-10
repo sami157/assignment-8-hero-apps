@@ -41,7 +41,7 @@ const AllApps = () => {
 
     return (
         <div className='mx-[80px]'>
-            <Title></Title>
+            <Title text1='Our All Applications' text2='Explore All Apps on the Market developed by us. We code for Millions'></Title>
             <div className="flex justify-between my-[16px] items-center">
        <p className="text-[24px] font-semibold">
           ({searchTerm ? filteredApps.length : allapps.length}) Apps found

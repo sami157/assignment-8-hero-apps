@@ -35,7 +35,7 @@ const InstalledApps = () => {
 
   return (
     <div className='mx-[80px]'>
-      <Title />
+      <Title text1='Your Installed Apps' text2='Explore All Trending Apps on the Market developed by us'></Title>
       <div className='flex justify-between my-[16px]'>
         <p className='text-[24px] font-semibold'>
           ({installedApps.length}) Apps found
