@@ -1,5 +1,10 @@
 import React from 'react'
 import { Link, NavLink } from 'react-router-dom'
+
+import gpls from "../assets/google-play.png";
+import applogo from "../assets/app-store.png";
+import hero from "../assets/hero.png";
+
 const Banner = () => {
    const navigateToGoogleplaystore = () => {
   window.open("https://play.google.com/store/games?hl=en&pli=1", "_blank");
@@ -15,15 +20,15 @@ const Banner = () => {
     </div> 
     <div className='flex gap-[16px] my-[40px]'>
         <button onClick={navigateToGoogleplaystore} className='flex gap-[10px] px-[24px] py-[12px] border-gray-300 border-1 items-center rounded-[8px]'>
-            <img className='w-[32px]' src="src\assets\google-play.png" alt="" />
+            <img className='w-[32px]' src={gpls} alt="" />
             <p className='font-bold'>Google Play</p>
         </button>
         <button onClick={navigateToappstore} className='flex gap-[10px] px-[24px] py-[12px] border-gray-300 border-1 items-center rounded-[8px]'>
-            <img className='w-[32px]' src="src\assets\app-store.png" alt="" />
+            <img className='w-[32px]' src={applogo} alt="" />
             <p className='font-bold'>App Store</p>
         </button>
       </div>
-      <img className='w-1/2 mx-auto' src="src\assets\hero.png" alt="" />
+      <img className='w-1/2 mx-auto' src={hero} alt="" />
       <div className='w-full text-white text-center py-[80px] bg-gradient-to-r from-[#632EE3] to-[#9F62F2]'>
         <p className='text-[48px] font-bold mb-[40px]'>Trusted by Millions, Built for You</p>
         <div className='flex px-[183px] mx-auto gap-[24px] justify-center'>

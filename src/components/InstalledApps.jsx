@@ -3,6 +3,9 @@ import InstalledAppCard from './InstalledAppCard'
 import Title from './Title'
 
 const InstalledApps = () => {
+
+
+    
     return (
         <div className='mx-[80px]'>
             <Title></Title>
