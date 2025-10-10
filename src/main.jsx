@@ -8,6 +8,7 @@ import Body from './components/Body.jsx';
 import AllApps from './pages/AllApps.jsx';
 import About from "./pages/About.jsx";
 import InstalledApps from './components/InstalledApps.jsx';
+import AppDescription from './pages/AppDescription.jsx';
 
 const router = createBrowserRouter([
   {
@@ -26,7 +27,10 @@ const router = createBrowserRouter([
         path: "installed",
         Component: InstalledApps
       },
-      { path: "about/:id", Component: About }
+      { 
+        path: "about/:id",
+        Component: AppDescription 
+      }
     ]
   },
 ]);
